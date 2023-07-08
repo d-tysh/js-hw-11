@@ -13,33 +13,40 @@ form {
   width: 300px;
   margin: 0 auto;
 }
-.form-wrapper {background: #A3D0C3;}
-.form-wrapper input {
-  width: 100%;
-  height: 42px;
-  padding-left: 10px;
-  border: 2px solid #7BA7AB;
-  border-radius: 5px;
-  outline: none;
-  background: #F9F0DA;
-  color: #9E9C9C;
-}
-.form-wrapper button {
-  position: absolute; 
+.form-wrapper {
+  background: #A3D0C3;
+  position: sticky;
   top: 0;
-  right: 0px;
-  width: 42px;
-  height: 42px;
-  border: none;
-  background: #7BA7AB;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-}
-.form-wrapper button:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  font-size: 16px;
-  color: #F9F0DA;
+
+  & input {
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    outline: none;
+    background: #F9F0DA;
+    color: #9E9C9C;
+  }
+
+  & button {
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: #7BA7AB;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+
+  & button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+  }
 }
 
 .load-more {
@@ -61,7 +68,7 @@ form {
   padding: 20px 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   row-gap: 20px;
 
   &__item-wrapper {
