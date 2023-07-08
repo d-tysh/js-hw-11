@@ -34,6 +34,7 @@ function onSearch(event) {
         return;
     }
 
+    loadMoreBtn.style.display = 'none';
     gallery.innerHTML = '';
 
     getImages(searchQuery, page, per_page)
