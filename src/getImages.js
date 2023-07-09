@@ -20,4 +20,4 @@ async function getImages(query, queryPage, queryPerPage) {
     return response.json();
 }
 
-export {getImages};
+export { getImages };

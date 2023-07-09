@@ -7,7 +7,9 @@ button {
 
 * {box-sizing: border-box;}
 body{margin: 0;}
-div {padding: 30px 0}
+div {
+  padding: 30px 0;
+}
 form {
   position: relative;
   width: 300px;
@@ -91,6 +93,7 @@ form {
   justify-content: space-around;
   padding: 5px;
   border-top: none;
+  flex-wrap: wrap;
 }
 
 .info-item {
@@ -102,4 +105,36 @@ form {
 
 .load-more {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery {
+    &__item-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallery {
+    &__item-wrapper {
+      width: calc((100% - 40px) / 3);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    border-top: none;
+  }
+  
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
 }
